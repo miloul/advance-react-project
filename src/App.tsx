@@ -1,15 +1,11 @@
-import ContentSection from "./components/ContentSection";
-
-import TitleSection from "./components/TitleSection";
+//import RouteManager from "./routes/Router";
 import GlobalStyle from "./styles/Global";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <TitleSection />
-
-      <ContentSection />
+      {/* <RouteManager /> */}
     </>
   );
 }
