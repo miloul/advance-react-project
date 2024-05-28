@@ -7,11 +7,10 @@ import Seungmin from "../pages/Seungmin";
 const RouterManager = () => {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />}>
-        <Route path="dongjin" element={<Dongjin />} />
-        <Route path="jaewon" element={<Jaewon />} />
-        <Route path="seungmin" element={<Seungmin />} />
-      </Route>
+      <Route path="/" element={<HomePage />}></Route>
+      <Route path="/dongjin" element={<Dongjin />} />
+      <Route path="/jaewon" element={<Jaewon />} />
+      <Route path="/seungmin" element={<Seungmin />} />
     </Routes>
   );
 };
