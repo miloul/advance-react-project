@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PageCard from "../PageCard";
 import Title from "../Title";
 
@@ -17,16 +18,20 @@ const ContentSection = () => {
             gridTemplateColumns: "repeat(3, 30%)",
           }}
         >
-          <PageCard
-            src="https://picsum.photos/250"
-            content="이승민"
-            role="교육운영진"
-          />
-          <PageCard
-            src="https://picsum.photos/250"
-            content="이승민"
-            role="교육운영진"
-          />
+          <Link to="/seungmin">
+            <PageCard
+              src="https://picsum.photos/250"
+              content="이승민"
+              role="교육운영진"
+            />
+          </Link>
+          <Link to="/dongjin">
+            <PageCard
+              src="https://picsum.photos/250"
+              content="이동진"
+              role="교육운영진"
+            />
+          </Link>
           <PageCard
             src="https://picsum.photos/250"
             content="이승민"
