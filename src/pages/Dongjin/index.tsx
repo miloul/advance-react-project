@@ -1,8 +1,9 @@
 import Title from "../../components/Title";
 import ProfileImage from "../../components/ProfileImage";
 import Tag from "../../components/Tag";
+import Link from "../../components/Link";
 
-let strings = [
+const strings = [
   "HTML",
   "JavaScript",
   "jQuery",
@@ -24,9 +25,7 @@ const Dongjin = () => {
           </p>
           <br />
           <p style={{ marginTop: "15px" }}>
-            <a href="https://github.com/dongjin0521">
-              <span style={{ fontSize: "15px" }}>깃허브 링크</span>
-            </a>
+            <Link name="github" link="https://github.com/dongjin0521"></Link>
           </p>
         </div>
       </div>
