@@ -1,3 +1,5 @@
+import LinkComponent from "../../components/Link";
+
 const Seungmin = () => {
   return (
     <>
@@ -9,7 +11,9 @@ const Seungmin = () => {
       >
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
           <img src="https://picsum.photos/250" alt="seungmin" />
-          <div style={{ margin: "3rem" }}></div>
+          <div style={{ margin: "3rem" }}>
+            <LinkComponent name="github" link="hi" />
+          </div>
         </div>
         <div style={{ margin: "3rem", fontSize: "1.5rem", fontWeight: "bold" }}>
           소개
