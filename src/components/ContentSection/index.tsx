@@ -32,11 +32,11 @@ const ContentSection = () => {
               role="교육운영진"
             />
           </Link>
-          <Link to="/seungmin">
+          <Link to="/jaewon">
             <PageCard
               src="https://picsum.photos/250"
-              content="이승민"
-              role="교육운영진"
+              content="김재원"
+              role="튜터"
             />
           </Link>
         </div>

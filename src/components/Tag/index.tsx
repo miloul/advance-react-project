@@ -1,4 +1,8 @@
-const Tag = (name: string) => {
+interface tagprop {
+  name: string;
+}
+
+const Tag = ({ name }: tagprop) => {
   return (
     <div
       style={{
