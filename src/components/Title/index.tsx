@@ -8,7 +8,7 @@ const Title = ({ title, isName = false }: TitleProps) => {
     <div
       style={{
         margin: "3rem",
-        fontSize: `${isName ? "2.4rem" : "1.6rem"}`,
+        fontSize: `${isName ? "2.5rem" : "1.6rem"}`,
         fontWeight: "bold",
       }}
     >

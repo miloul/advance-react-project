@@ -12,6 +12,7 @@ const Tag = ({ name }: tagprops) => {
         textAlign: "center",
         borderRadius: "1rem",
         fontSize: "1.4rem",
+        float: "left",
       }}
     >
       {name}
