@@ -1,7 +1,7 @@
 import Tag from "../../components/Tag";
 import Title from "../../components/Title";
-import ProfileImage from "./ProfileImage";
-
+import Link from "../../components/Link";
+import ProfileImage from "../../components/ProfileImage";
 const stacks: string[] = ["python", "C++", "Unity", "javascript"];
 
 const Jaewon = () => {
@@ -9,25 +9,17 @@ const Jaewon = () => {
     <div style={{ marginTop: "60px" }}>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 3fr" }}>
         <ProfileImage
-          src="/src/assets/kjw.jpg"
+          src="/src/assets/jaewon.jpg"
           alt="김재원사진"
-          style={{
-            width: "250px",
-            height: "250px",
-            borderRadius: "10px",
-            marginLeft: "30px",
-          }}
         ></ProfileImage>
 
-        <div style={{ marginTop: "40px" }}>
+        <div style={{ marginTop: "40px", marginLeft: "40px" }}>
           <p>
             <Title isName={true} title="김재원" />
           </p>
           <br />
-          <p style={{ marginTop: "15px" }}>
-            <a href="https://github.com/PentiumG">
-              <span style={{ fontSize: "15px" }}>깃허브 링크</span>
-            </a>
+          <p style={{ marginTop: "15px", marginLeft: "30px" }}>
+            <Link name="github" link="https://github.com/PentiumG" />
           </p>
         </div>
       </div>
