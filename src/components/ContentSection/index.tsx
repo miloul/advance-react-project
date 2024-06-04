@@ -32,11 +32,13 @@ const ContentSection = () => {
               role="교육운영진"
             />
           </Link>
-          <PageCard
-            src="https://picsum.photos/250"
-            content="이승민"
-            role="교육운영진"
-          />
+          <Link to="/seungmin">
+            <PageCard
+              src="https://picsum.photos/250"
+              content="이승민"
+              role="교육운영진"
+            />
+          </Link>
         </div>
       </div>
       <div style={{ marginTop: "5rem" }}>

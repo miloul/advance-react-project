@@ -49,11 +49,6 @@ const GlobalStyle = createGlobalStyle`
     overflow-y: hidden;
   }
 
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-
   img {
     max-width: 100%;
     height: auto;
