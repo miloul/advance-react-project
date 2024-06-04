@@ -1,4 +1,5 @@
 import LinkComponent from "../../components/Link";
+import Tag from "../../components/Tag";
 
 const Seungmin = () => {
   return (
@@ -22,6 +23,7 @@ const Seungmin = () => {
         <div style={{ margin: "3rem", fontSize: "1.5rem", fontWeight: "bold" }}>
           기술스택
         </div>
+        <Tag name="string"></Tag>
       </div>
     </>
   );
