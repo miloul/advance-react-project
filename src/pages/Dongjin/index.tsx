@@ -1,23 +1,26 @@
-import ProfileImage from "./ProfileImage";
+import Title from "../../components/Title";
+import ProfileImage from "../../components/ProfileImage";
+import Tag from "../../components/Tag";
+
+let strings = [
+  "HTML",
+  "JavaScript",
+  "jQuery",
+  "JAVA Spring",
+  "mySql",
+  "oracle DB",
+  "shell script",
+];
 
 const Dongjin = () => {
   return (
     <div style={{ marginTop: "60px" }}>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 3fr" }}>
-        <ProfileImage
-          src="/src/assets/ldj.jpg"
-          alt="이동진사진"
-          style={{
-            width: "250px",
-            height: "250px",
-            borderRadius: "10px",
-            marginLeft: "30px",
-          }}
-        ></ProfileImage>
+        <ProfileImage src="/src/assets/ldj.jpg" alt="이동진사진"></ProfileImage>
 
         <div style={{ marginTop: "40px" }}>
           <p>
-            <span style={{ fontSize: "25px", fontWeight: "bold" }}>이동진</span>
+            <Title title="이동진" isName={true}></Title>
           </p>
           <br />
           <p style={{ marginTop: "15px" }}>
@@ -30,7 +33,7 @@ const Dongjin = () => {
 
       <div style={{ marginLeft: "30px", marginTop: "15px" }}>
         <h1>
-          <span style={{ fontSize: "15px", fontWeight: "bold" }}>소개</span>
+          <Title title="소개" isName={false}></Title>
         </h1>
         <p style={{ fontSize: "13px", marginLeft: "33px" }}>
           <span>
@@ -44,6 +47,12 @@ const Dongjin = () => {
             입니다!
           </span>
         </p>
+        <h1>
+          <Title title="기술스택" isName={false}></Title>
+        </h1>
+        {strings.map((string) => (
+          <Tag name={string}></Tag>
+        ))}
       </div>
     </div>
   );
